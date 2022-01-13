@@ -1,6 +1,6 @@
-from adapt.intent import IntentBuilder
-from mycroft import MycroftSkill, intent_handler
-from mycroft.util.log import LOG
+# from adapt.intent import IntentBuilder
+from mycroft import MycroftSkill, intent_file_handler
+# from mycroft.util.log import LOG
 
 # import requests
 
@@ -16,4 +16,3 @@ class MycroftBioloidSkill(MycroftSkill):
 
 def create_skill():
     return MycroftBioloidSkill()
-
