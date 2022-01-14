@@ -16,7 +16,5 @@ class MycroftBioloidSkill(MycroftSkill):
         self.speak_dialog('forward')
 
 
-
-
 def create_skill():
     return MycroftBioloidSkill()
