@@ -16,4 +16,7 @@ def move_forward():
     # terminates action at one step
     ser.write(b'\xFF\x55\x00\xFF\x00\xFF')
 
+def move_backward():
+
+    # action code goes here...
 
