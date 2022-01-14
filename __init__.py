@@ -7,7 +7,7 @@ from mycroft import MycroftSkill, intent_file_handler
 import actions_motion
 
 # open serial port
-3 ser = serial.Serial(port='/dev/ttyUSB0', baudrate=57600, timeout=1)
+# ser = serial.Serial(port='/dev/ttyUSB0', baudrate=57600, timeout=1)
 
 
 class MycroftBioloidSkill(MycroftSkill):
