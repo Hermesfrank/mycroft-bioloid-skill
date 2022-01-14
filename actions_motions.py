@@ -17,9 +17,3 @@ def move_forward():
     ser.write(b'\xFF\x55\x00\xFF\x00\xFF')
 
 
-class Motions(object):
-    """Class used to define which command(s) to send to robot
-    """
-
-# --> Sub callback function, one per intent
-
