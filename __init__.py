@@ -22,7 +22,7 @@ class MycroftBioloidSkill(MycroftSkill):
         # terminates action at one step
 #        ser.write(b'\xFF\x55\x00\xFF\x00\xFF')
 
-        actions_motions.move_forward
+        actions_motions.move_forward()
 
         self.speak_dialog('forward')
 
