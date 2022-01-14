@@ -13,11 +13,11 @@ class Motions(object):
 
     def move_forward(self,message):
 
-    # action code goes here...
+        # action code goes here...
 
-    #    actions_leds.initialize_pi_hat_leds()
+        #    actions_leds.initialize_pi_hat_leds()
 
-    # send command to bot
-    ser.write(b'\xFF\x55\x01\xFE\x00\xFF')
-    # terminates action at one step
-    ser.write(b'\xFF\x55\x00\xFF\x00\xFF')
+        # send command to bot
+        ser.write(b'\xFF\x55\x01\xFE\x00\xFF')
+        # terminates action at one step
+        ser.write(b'\xFF\x55\x00\xFF\x00\xFF')

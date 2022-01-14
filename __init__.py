@@ -4,7 +4,7 @@ from mycroft import MycroftSkill, intent_file_handler
 
 # import requests
 # import serial
-import actions_motion
+import actions_motions
 
 # open serial port
 # ser = serial.Serial(port='/dev/ttyUSB0', baudrate=57600, timeout=1)
@@ -22,7 +22,7 @@ class MycroftBioloidSkill(MycroftSkill):
         # terminates action at one step
 #        ser.write(b'\xFF\x55\x00\xFF\x00\xFF')
 
-        actions_motion.move_forward
+        actions_motions.move_forward
 
         self.speak_dialog('forward')
 
