@@ -1,6 +1,6 @@
 # import random
 import time
-# import board
+import board
 import adafruit_dotstar as dotstar
 
 # Using a DotStar Digital LED Matrix with 64 LEDs connected to digital pins
