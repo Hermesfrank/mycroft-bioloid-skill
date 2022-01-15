@@ -16,4 +16,15 @@ def move_forward():
     # terminates action at one step
     ser.write(b'\xFF\x55\x00\xFF\x00\xFF')
 
+def move_back():
+
+    # action code goes here...
+
+    #    actions_leds.initialize_pi_hat_leds()
+
+    # send command to bot
+    ser.write(b'\xFF\x55\x02\xFD\x00\xFF')
+    # terminates action at one step
+    ser.write(b'\xFF\x55\x00\xFF\x00\xFF')
+
 
