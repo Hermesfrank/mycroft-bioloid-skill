@@ -18,7 +18,7 @@ def initialize_pi_hat_leds():
     # MAIN LOOP
     num = 1
     n_chest = len(chest)
-    while num < 10:    # seqquence length
+    while num < 10:    # sequence length
         # Fill each dot with a random bright
         for dot in range(n_chest):
             chest[dot] = (0, 0, random_bright())
