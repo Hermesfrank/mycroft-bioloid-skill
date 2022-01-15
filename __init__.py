@@ -24,7 +24,7 @@ class MycroftBioloidSkill(MycroftSkill):
         self.speak_dialog('forward')
 
     @intent_file_handler('backward.intent')
-    def handle_forward(self, message):
+    def handle_backward(self, message):
         move_back()
         self.speak_dialog('backward')
 
