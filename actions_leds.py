@@ -1,4 +1,4 @@
-# import random
+import random
 import time
 import board
 import adafruit_dotstar as dotstar
@@ -6,10 +6,9 @@ import adafruit_dotstar as dotstar
 # Using a DotStar Digital LED Matrix with 64 LEDs connected to digital pins
 dots = dotstar.DotStar(board.D13, board.D12, 64, brightness=0.1)
 # Using a Respeaker 2-Mics Pi Hat with its 3 APA102 LEDs connected to hardware SPI
-# chest = dotstar.DotStar(board.SCK, board.MOSI, 3, brightness=0.2)
+chest = dotstar.DotStar(board.SCK, board.MOSI, 3, brightness=0.2)
 
 
-"""
 def initialize_pi_hat_leds():
     # a random bright 0 -> 224
     def random_bright():
@@ -26,7 +25,7 @@ def initialize_pi_hat_leds():
         time.sleep(.05)     # flicker length
     for dot in range(n_chest):
         chest[dot] = (0, 0, 255)
-"""
+
 
 def initialize_matrix():
     dots.fill((0, 0, 0))

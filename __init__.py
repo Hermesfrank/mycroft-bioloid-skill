@@ -11,6 +11,8 @@ from .actions_leds import *
 initialize_matrix()
 # Initialize basic neutral face
 initialize_face()
+# Initialize Respeaker LEDs
+actions_leds.initialize_pi_hat_leds()
 
 
 class MycroftBioloidSkill(MycroftSkill):

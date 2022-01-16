@@ -1,5 +1,6 @@
 import serial
-import time
+# import time
+import actions_leds
 
 # open serial port
 ser = serial.Serial(port='/dev/ttyUSB0', baudrate=57600, timeout=1)
@@ -9,7 +10,7 @@ def move_forward():
 
     # action code goes here...
 
-    #    actions_leds.initialize_pi_hat_leds()
+    actions_leds.initialize_pi_hat_leds()
 
     # send command to bot
     ser.write(b'\xFF\x55\x01\xFE\x00\xFF')
