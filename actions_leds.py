@@ -4,7 +4,7 @@ import board
 import adafruit_dotstar as dotstar
 
 # Using a DotStar Digital LED Matrix with 64 LEDs connected to digital pins
-dots = dotstar.DotStar(board.D13, board.D12, 64, brightness=0.05)
+dots = dotstar.DotStar(board.D13, board.D12, 64, brightness=0.05)  # put at 0.1 when using face shield on robot; 0.05 for testing
 # Using a Respeaker 2-Mics Pi Hat with its 3 APA102 LEDs connected to hardware SPI
 chest = dotstar.DotStar(board.SCK, board.MOSI, 3, brightness=0.2)
 
