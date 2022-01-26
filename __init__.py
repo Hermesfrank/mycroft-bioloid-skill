@@ -19,6 +19,12 @@ class MycroftBioloidSkill(MycroftSkill):
     def __init__(self):
         MycroftSkill.__init__(self)
 
+    # chat
+    @intent_file_handler('smile.intent')
+    def handle_forward(self, message):
+        smile()
+        self.speak_dialog('smile')
+
     # actions
     @intent_file_handler('forward.intent')
     def handle_forward(self, message):

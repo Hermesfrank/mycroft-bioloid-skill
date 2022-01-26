@@ -21,7 +21,7 @@ def move_back():
 
     # action code goes here...
 
-    #    actions_leds.initialize_pi_hat_leds()
+    initialize_pi_hat_leds()
 
     # send command to bot
     ser.write(b'\xFF\x55\x02\xFD\x00\xFF')
