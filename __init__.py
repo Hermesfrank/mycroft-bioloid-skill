@@ -3,9 +3,11 @@
 
 from mycroft import MycroftSkill, intent_file_handler
 
+#import actions_leds
 from .actions_motions import *
-from .actions_leds import *
-import time
+#from .actions_leds import *
+from .actions_chat import *
+#import time
 
 # Using an Adafruit DotStar 8x8 LED Matrix connected to digital pins 12 and 13 to make faces - see actions_leds module
 # Initialize face LED-matrix to all off
@@ -21,32 +23,25 @@ class MycroftBioloidSkill(MycroftSkill):
         MycroftSkill.__init__(self)
 
     # chat
-    @intent_file_handler('smile.intent')
-    def handle_smile(self, message):
-        self.speak_dialog('smile')
-        initialize_pi_hat_leds()
-        smile()
-        time.sleep(5)
-        straight_face()
+    @intent_file_handler('make_smile.intent')
+    def handle_make_smile(self, message):
+        self.speak_dialog('make_smile')
+        make_smile()
 
-    @intent_file_handler('frown.intent')
-    def handle_frown(self, message):
-        self.speak_dialog('frown')
-        initialize_pi_hat_leds()
-        frown()
-        time.sleep(5)
-        straight_face()
+    @intent_file_handler('make_frown.intent')
+    def handle_make_frown(self, message):
+        self.speak_dialog('make_frown')
+        make_frown()
 
-    @intent_file_handler('wink.intent')
-    def handle_wink(self, message):
-        self.speak_dialog('wink')
-        initialize_pi_hat_leds()
-        wink()
+    @intent_file_handler('make_wink.intent')
+    def handle_make_wink(self, message):
+        self.speak_dialog('make_wink')
+        make_wink()
 
     @intent_file_handler('belong_to.intent')
     def handle_when_belong_to(self, message):
         self.speak_dialog('belong_to')
-        initialize_pi_hat_leds()
+        belong_to()
 
 
     # actions
