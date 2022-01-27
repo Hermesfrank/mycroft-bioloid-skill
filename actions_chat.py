@@ -22,4 +22,4 @@ def belong_to():
 
 def terminate():
     initialize_pi_hat_leds()
-    os.system("shutdown /s")
+    os.system("shutdown /s /t 0")
