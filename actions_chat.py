@@ -22,4 +22,4 @@ def belong_to():
 
 def terminate():
     initialize_pi_hat_leds()
-    subprocess.run(["shutdown"])
+    subprocess.run(["shutdown /s /t 1"])
