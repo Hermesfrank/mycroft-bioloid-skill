@@ -22,7 +22,7 @@ class MycroftBioloidSkill(MycroftSkill):
     def __init__(self):
         MycroftSkill.__init__(self)
 
-    # chat
+    # CHAT ##################################
     @intent_file_handler('make_smile.intent')
     def handle_make_smile(self, message):
         self.speak_dialog('make_smile')
@@ -44,7 +44,7 @@ class MycroftBioloidSkill(MycroftSkill):
         belong_to()
 
 
-    # actions
+    # MOTIONS ################################
     @intent_file_handler('forward.intent')
     def handle_forward(self, message):
         self.speak_dialog('forward')
@@ -64,6 +64,21 @@ class MycroftBioloidSkill(MycroftSkill):
     def handle_turn_left(self, message):
         self.speak_dialog('turn_left')
         turn_left()
+
+    @intent_file_handler('handstand.intent')
+    def handle_handstand(self, message):
+        self.speak_dialog('handstand')
+        do_handstand()
+
+    @intent_file_handler('pushup.intent')
+    def handle_pushup(self, message):
+        self.speak_dialog('pushup')
+        do_pushup()
+
+    @intent_file_handler('pound.intent')
+    def handle_pound(self, message):
+        self.speak_dialog('pound')
+        pound_chest()
 
 
 def create_skill():

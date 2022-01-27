@@ -1,5 +1,4 @@
 import serial
-import time
 from .actions_leds import *
 
 # open serial port
@@ -42,4 +41,30 @@ def turn_left():
     # terminates action at one step
     ser.write(b'\xFF\x55\x00\xFF\x00\xFF')
 
+def do_handstand():
+    # action code goes here...
+    initialize_pi_hat_leds()
 
+    # send command to bot
+    ser.write(b'\xFF\x55\x18\xE7\x00\xFF')
+
+def do_pushup():
+    # action code goes here...
+    initialize_pi_hat_leds()
+
+    # send command to bot
+    ser.write(b'\xFF\x55\x14\xEB\x00\xFF')
+
+def pound_chest():
+    # action code goes here...
+    initialize_pi_hat_leds()
+
+    # have him smile
+    smile()
+
+    # send command to bot
+    ser.write(b'\xFF\x55\x21\xDE\x00\xFF')
+
+    # return to normal face
+    time.sleep(3)
+    straight_face()
