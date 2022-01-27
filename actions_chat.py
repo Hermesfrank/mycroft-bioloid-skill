@@ -21,5 +21,6 @@ def belong_to():
     initialize_pi_hat_leds()
 
 def terminate():
+    
     initialize_pi_hat_leds()
     subprocess.call(["shutdown", "-h", "now"])
