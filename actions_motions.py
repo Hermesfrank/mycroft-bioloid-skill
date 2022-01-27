@@ -11,29 +11,41 @@ def move_forward():
 
     # send command to bot
     ser.write(b'\xFF\x55\x01\xFE\x00\xFF')
-    time.sleep(4)
+    time.sleep(3)
     # terminates action
+    ser.write(b'\xFF\x55\x00\xFF\x00\xFF')
+    time.sleep(1)
     ser.write(b'\xFF\x55\x00\xFF\x00\xFF')
 
 def move_back():
     initialize_pi_hat_leds()
 
     ser.write(b'\xFF\x55\x02\xFD\x00\xFF')
-    # terminates action at one step
+    time.sleep(3)
+    # terminates action
+    ser.write(b'\xFF\x55\x00\xFF\x00\xFF')
+    time.sleep(1)
+    # just to be sure it stops
     ser.write(b'\xFF\x55\x00\xFF\x00\xFF')
 
 def turn_right():
     initialize_pi_hat_leds()
 
     ser.write(b'\xFF\x55\x08\xF7\x00\xFF')
-    # terminates action at one step
+    time.sleep(3)
+    # terminates action
+    ser.write(b'\xFF\x55\x00\xFF\x00\xFF')
+    time.sleep(1)
     ser.write(b'\xFF\x55\x00\xFF\x00\xFF')
 
 def turn_left():
     initialize_pi_hat_leds()
 
     ser.write(b'\xFF\x55\x04\xFB\x00\xFF')
-    # terminates action at one step
+    time.sleep(3)
+    # terminates action
+    ser.write(b'\xFF\x55\x00\xFF\x00\xFF')
+    time.sleep(1)
     ser.write(b'\xFF\x55\x00\xFF\x00\xFF')
 
 def do_handstand():
