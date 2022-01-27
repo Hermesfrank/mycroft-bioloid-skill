@@ -24,6 +24,7 @@ class MycroftBioloidSkill(MycroftSkill):
     @intent_file_handler('smile.intent')
     def handle_smile(self, message):
         self.speak_dialog('smile')
+        initialize_pi_hat_leds()
         smile()
         time.sleep(5)
         straight_face()
@@ -31,6 +32,7 @@ class MycroftBioloidSkill(MycroftSkill):
     @intent_file_handler('frown.intent')
     def handle_frown(self, message):
         self.speak_dialog('frown')
+        initialize_pi_hat_leds()
         frown()
         time.sleep(5)
         straight_face()
@@ -38,6 +40,7 @@ class MycroftBioloidSkill(MycroftSkill):
     @intent_file_handler('wink.intent')
     def handle_wink(self, message):
         self.speak_dialog('wink')
+        initialize_pi_hat_leds()
         wink()
 
     @intent_file_handler('belong_to.intent')
