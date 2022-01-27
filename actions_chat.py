@@ -1,12 +1,16 @@
-import actions_leds
-import time
-
+#import actions_leds
+'''
+from .actions_leds import *
 
 def wink():
-    actions_leds.wink()
+    initialize_pi_hat_leds()
 
 def smile():
-    actions_leds.smile()
+    initialize_pi_hat_leds()
 
 def frown():
-    actions_leds.frown()
+    initialize_pi_hat_leds()
+
+def belong_to():
+    initialize_pi_hat_leds()
+    '''

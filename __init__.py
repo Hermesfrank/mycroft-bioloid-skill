@@ -13,7 +13,7 @@ initialize_matrix()
 # Initialize basic neutral face
 initialize_face()
 # Initialize Respeaker LEDs
-actions_leds.initialize_pi_hat_leds()
+initialize_pi_hat_leds()
 
 
 class MycroftBioloidSkill(MycroftSkill):
@@ -43,18 +43,19 @@ class MycroftBioloidSkill(MycroftSkill):
     @intent_file_handler('belong_to.intent')
     def handle_when_belong_to(self, message):
         self.speak_dialog('belong_to')
+        initialize_pi_hat_leds()
 
 
     # actions
     @intent_file_handler('forward.intent')
     def handle_forward(self, message):
-        move_forward()
         self.speak_dialog('forward')
+        move_forward()
 
     @intent_file_handler('backward.intent')
     def handle_backward(self, message):
-        move_back()
         self.speak_dialog('backward')
+        move_back()
 
 
 def create_skill():
