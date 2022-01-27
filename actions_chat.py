@@ -1,4 +1,5 @@
 from .actions_leds import *
+import os
 
 def make_wink():
     initialize_pi_hat_leds()
@@ -19,3 +20,6 @@ def make_frown():
 def belong_to():
     initialize_pi_hat_leds()
 
+def terminate():
+    initialize_pi_hat_leds()
+    os.system("shutdown /s")

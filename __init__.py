@@ -23,6 +23,12 @@ class MycroftBioloidSkill(MycroftSkill):
     def __init__(self):
         MycroftSkill.__init__(self)
 
+    # SHUTDOWN #############################
+    @intent_file_handler('terminate.intent')
+    def handle_terminate(self, message):
+        self.speak_dialog('terminate')
+        terminate()
+
     # CHAT ##################################
     @intent_file_handler('make_smile.intent')
     def handle_make_smile(self, message):
