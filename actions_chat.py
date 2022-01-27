@@ -23,21 +23,21 @@ def wink():
 
 
 def smile():
-    actions_leds.initialize_pi_hat_leds()
+#    actions_leds.initialize_pi_hat_leds()
 
     # smile
-    time.sleep(1)
+#    time.sleep(1)
     actions_leds.smile()
-    time.sleep(5)
-    actions_leds.initialize_pi_hat_leds()
+#    time.sleep(5)
+#    actions_leds.initialize_pi_hat_leds()
 #    actions_leds.straight_face()
 
 
 def frown():
-    actions_leds.initialize_pi_hat_leds()
+#    actions_leds.initialize_pi_hat_leds()
 
     # frown
-    time.sleep(1)
+#    time.sleep(1)
     actions_leds.frown()
-    time.sleep(1)
-    actions_leds.straight_face()
+#    time.sleep(1)
+#    actions_leds.straight_face()
