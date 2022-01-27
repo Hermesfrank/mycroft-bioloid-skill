@@ -11,7 +11,8 @@ def move_forward():
 
     # send command to bot
     ser.write(b'\xFF\x55\x01\xFE\x00\xFF')
-    # terminates action at one step
+    time.sleep(4)
+    # terminates action
     ser.write(b'\xFF\x55\x00\xFF\x00\xFF')
 
 def move_back():
