@@ -22,9 +22,10 @@ class MycroftBioloidSkill(MycroftSkill):
     # chat
     @intent_file_handler('smile.intent')
     def handle_smile(self, message):
-        smile()
+
         self.speak_dialog('smile')
-        straight_face()
+        smile()
+#        straight_face()
 
     @intent_file_handler('frown.intent')
     def handle_frown(self, message):

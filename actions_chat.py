@@ -29,7 +29,8 @@ def smile():
     time.sleep(1)
     actions_leds.smile()
     time.sleep(5)
-    actions_leds.straight_face()
+    actions_leds.initialize_pi_hat_leds()
+#    actions_leds.straight_face()
 
 
 def frown():
