@@ -1,5 +1,5 @@
 from .actions_leds import *
-import os
+import subprocess
 
 def make_wink():
     initialize_pi_hat_leds()
@@ -22,4 +22,4 @@ def belong_to():
 
 def terminate():
     initialize_pi_hat_leds()
-    os.system("shutdown /s /t 0")
+    subprocess.run(["shutdown"])
