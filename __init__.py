@@ -40,9 +40,9 @@ class MycroftBioloidSkill(MycroftSkill):
         self.speak_dialog('wink')
         wink()
 
-    @intent_file_handler('when_born.intent')
-    def handle_when_born(self, message):
-        self.speak_dialog('when_born')
+    @intent_file_handler('belong_to.intent')
+    def handle_when_belong_to(self, message):
+        self.speak_dialog('belong_to')
 
 
     # actions
