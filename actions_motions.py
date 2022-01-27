@@ -24,4 +24,22 @@ def move_back():
     # terminates action at one step
     ser.write(b'\xFF\x55\x00\xFF\x00\xFF')
 
+def turn_right():
+    # action code goes here...
+    initialize_pi_hat_leds()
+
+    # send command to bot
+    ser.write(b'\xFF\x55\x08\xF7\x00\xFF')
+    # terminates action at one step
+    ser.write(b'\xFF\x55\x00\xFF\x00\xFF')
+
+def turn_left():
+    # action code goes here...
+    initialize_pi_hat_leds()
+
+    # send command to bot
+    ser.write(b'\xFF\x55\x04\xFB\x00\xFF')
+    # terminates action at one step
+    ser.write(b'\xFF\x55\x00\xFF\x00\xFF')
+
 

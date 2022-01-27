@@ -55,6 +55,16 @@ class MycroftBioloidSkill(MycroftSkill):
         self.speak_dialog('backward')
         move_back()
 
+    @intent_file_handler('turn_right.intent')
+    def handle_turn_right(self, message):
+        self.speak_dialog('turn_right')
+        turn_right()
+
+    @intent_file_handler('turn_left.intent')
+    def handle_turn_left(self, message):
+        self.speak_dialog('turn_left')
+        turn_left()
+
 
 def create_skill():
     return MycroftBioloidSkill()
