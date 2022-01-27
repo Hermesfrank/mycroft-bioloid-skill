@@ -5,6 +5,7 @@ from mycroft import MycroftSkill, intent_file_handler
 
 from .actions_motions import *
 from .actions_leds import *
+import time
 
 # Using an Adafruit DotStar 8x8 LED Matrix connected to digital pins 12 and 13 to make faces - see actions_leds module
 # Initialize face LED-matrix to all off
@@ -25,6 +26,7 @@ class MycroftBioloidSkill(MycroftSkill):
 
         self.speak_dialog('smile')
         smile()
+        time.sleep(5)
         straight_face()
 
     @intent_file_handler('frown.intent')
