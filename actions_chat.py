@@ -28,7 +28,7 @@ def smile():
     # smile
     time.sleep(1)
     actions_leds.smile()
-    time.sleep(1)
+    time.sleep(5)
     actions_leds.straight_face()
 
 
