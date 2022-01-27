@@ -1,13 +1,14 @@
-# Code to build a voice-directed Robotis Bioloid robot with LED face animations.
-# 2022-01-14  FBH  Have RPi 4 talking to robot
+# Code to build a voice-directed Robotis Bioloid robot with LED face animations using Mycroft.
+# Robot answers to "Jarvis" or "Hey Jarvis"
+# static IP for ssh:  192.168.161.190  pswd: 10581058
+
+# 2022-01-27  FBH  Have basic operation like the old SNIPS operation in place
 
 from mycroft import MycroftSkill, intent_file_handler
 
-#import actions_leds
 from .actions_motions import *
-#from .actions_leds import *
 from .actions_chat import *
-#import time
+
 
 # Using an Adafruit DotStar 8x8 LED Matrix connected to digital pins 12 and 13 to make faces - see actions_leds module
 # Initialize face LED-matrix to all off
