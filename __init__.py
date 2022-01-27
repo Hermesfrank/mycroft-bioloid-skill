@@ -25,7 +25,7 @@ class MycroftBioloidSkill(MycroftSkill):
 
         self.speak_dialog('smile')
         smile()
-#        straight_face()
+        straight_face()
 
     @intent_file_handler('frown.intent')
     def handle_frown(self, message):
