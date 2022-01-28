@@ -1,6 +1,4 @@
 # Code to build a voice-directed Robotis Bioloid robot with LED face animations using Mycroft.
-# Robot answers to "Jarvis" or "Hey Jarvis"
-# static IP for ssh:  192.168.161.190  pswd: 10581058
 
 # 2022-01-27  FBH  Have basic operation like the old SNIPS operation in place
 
