@@ -1,6 +1,6 @@
 # Code to build a voice-directed Robotis Bioloid robot with LED face animations using Mycroft.
 
-# 2022-01-27  FBH  Have basic operation like the old SNIPS operation in place
+# 2022-01-27  FBH  Have basic operation like the old SNIPS operation in place but added steps to travel functions
 
 from mycroft import MycroftSkill, intent_file_handler
 
